@@ -1,0 +1,12 @@
+
+artifacts/
+cache/
+build-info/
+
+.states/
+
+.DS_Store
+
+node_modules/
+coverage/
+.env
