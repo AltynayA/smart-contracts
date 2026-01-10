@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToken dApp</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js" type="application/javascript"></script>
+      -->
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>MyToken dApp</h1>
+        <button id="connectWallet">Connect Wallet</button>
+        <div id="walletStatus">Wallet not connected</div>
+        <div id="balanceSection" class="hidden">
+            <h2>Your Balance</h2>
+            <p id="balance">Loading...</p>
+        </div>
+        <div id="transferSection" class="hidden">
+            <h2>Transfer Tokens</h2>
+            <input id="toAddress" type="text" placeholder="Recipient Address">
+            <input id="amount" type="number" placeholder="Amount">
+            <button id="estimateGas">Estimate Gas</button>
+            <p id="gasEstimate">Gas Estimate: N/A</p>
+            <button id="transfer">Transfer</button>
+            <p id="transferStatus"></p>
+        </div>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js" integrity="sha512-..."
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
