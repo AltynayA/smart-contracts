@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal dApp Frontend</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .info {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .error {
+      color: #d32f2f;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Minimal dApp</h1>
+
+  <button onclick="connectWallet()">Connect MetaMask</button>
+  <p>Connected Account: <span id="account">Not connected</span></p>
+
+  <button id="readBtn" disabled onclick="readValue()">Read Stored Value</button>
+  <div class="info">Stored Value: <strong id="value">—</strong></div>
+
+  <div id="error" class="error"></div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
